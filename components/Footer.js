@@ -19,11 +19,6 @@ const Footer = ({handleChoices}) => {
                 onPress={() => handleChoices(-1)}
             />
             <Button
-                name="star"
-                size={24}
-                color={COLORS.star}
-            />
-            <Button
                 name="heart"
                 size={24}
                 color={COLORS.likes}
