@@ -19,7 +19,8 @@ const Button = ({ name, size, color, style, onPress }) => {
         <TouchableWithoutFeedback
             onPressIn={() => animateScale(0.6)}
             onPressOut={() => {
-                animateScale(1)
+                animateScale(1),
+                onPress()
             }}
             delayPressIn={0}
             delayPressOut={100}

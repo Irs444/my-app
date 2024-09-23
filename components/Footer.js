@@ -9,13 +9,14 @@ const COLORS = {
 
 }
 
-const Footer = () => {
+const Footer = ({handleChoices}) => {
     return (
         <View style={styles.container}>
             <Button
                 name="times"
                 size={24}
                 color={COLORS.nope}
+                onPress={() => handleChoices(-1)}
             />
             <Button
                 name="star"
@@ -26,6 +27,7 @@ const Footer = () => {
                 name="heart"
                 size={24}
                 color={COLORS.likes}
+                onPress={() => handleChoices(1)}
             />
         </View>
     )
